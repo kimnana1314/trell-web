@@ -6,14 +6,11 @@ import Button from '@mui/material/Button'
 
 function App() {
     return (
-        <>
-            <div>Trần Văn Hải</div>
-            <Stack spacing={1} direction="row">
-                <Button variant="text">Text</Button>
-                <Button variant="contained">Contained</Button>
-                <Button variant="outlined">Outlined</Button>
-            </Stack>
-        </>
+        <Stack spacing={2} direction="row">
+            <Button variant="text">Text</Button>
+            <Button variant="contained">Contained</Button>
+            <Button variant="outlined">Outlined</Button>
+        </Stack>
     )
 }
 

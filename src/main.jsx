@@ -5,12 +5,15 @@ import '@fontsource/roboto/300.css'
 import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
-
-import App from './App.jsx'
+import { ThemeProvider } from '@mui/material/styles'
+import App from './App'
+import { greenLight,orangeLight } from './theme'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <CssBaseline/>
-        <App />
+        <ThemeProvider theme={orangeLight}>
+            <CssBaseline/>
+            <App />
+        </ThemeProvider>
     </StrictMode>
 )
