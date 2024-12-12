@@ -7,11 +7,11 @@ import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 import { ThemeProvider } from '@mui/material/styles'
 import App from './App'
-import { greenLight,orangeLight } from './theme'
+import theme from './theme'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <ThemeProvider theme={orangeLight}>
+        <ThemeProvider theme={theme} disableTransitionOnChange >
             <CssBaseline/>
             <App />
         </ThemeProvider>
